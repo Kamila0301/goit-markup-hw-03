@@ -228,12 +228,13 @@ img {
   font-size: 16px;
   line-height: 1.5;
   margin-top: 0;
-  margin-bottom: 120px;
+  padding-bottom: 0;
 }
 
 .feature-list {
   list-style: none;
   display: flex;
+  margin-bottom: 120px;
 }
 
 .visually-hidden.title {
@@ -262,7 +263,6 @@ img {
 .doing {
   display: flex;
   margin-bottom: 120px;
-  
 }
 
 .doing-li:not(:last-child) {
@@ -403,7 +403,6 @@ img {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.5;
-  margin-top: 8px;
   margin-bottom: 32px;
   padding-bottom: 0px;
   padding-left: 16px;
