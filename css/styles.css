@@ -25,7 +25,7 @@
   --background-color-button-portfolio-accent: #404bbf;
 }
 
-p, 
+p,
 h1,
 h2,
 h3,
@@ -82,7 +82,7 @@ img {
 
 .logo {
   display: block;
-  
+
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -103,7 +103,6 @@ img {
 }
 
 .section-header {
-   
 }
 
 /* Site nav */
@@ -113,9 +112,9 @@ img {
 }
 
 .site-nav {
-   display: flex;
-   align-items: center;
-   margin-right: auto;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
 .site-nav-li:not(:last-child) {
@@ -155,8 +154,12 @@ img {
   margin-left: auto;
 }
 
-.auth-nav-li:not(:last-child) {
+.auth-nav-li {
   margin-right: 40px;
+}
+
+.auth-nav-li:last-child {
+  margin-right: 0;
 }
 
 .auth-nav-link {
@@ -195,7 +198,6 @@ img {
 }
 
 .section-hero-text {
-  
 }
 
 /* Section */
@@ -216,7 +218,7 @@ img {
   font-size: 20px;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 8;
+  margin-bottom: 8px;
 }
 
 .section-feature-description {
@@ -240,10 +242,12 @@ img {
 
 .feature-list-item {
   padding: auto;
+  margin-right: 24px;
+  min-width: 264px;
 }
 
-.feature-list-item:not(:last-child) {
-  margin-right: 24px;
+.feature-list-item:last-child {
+  margin-right: 0;
 }
 
 /* Examples */
@@ -261,8 +265,12 @@ img {
   margin-bottom: 120px;
 }
 
-.doing-li:not(:last-child) {
+.doing-li {
   margin-right: 24px;
+}
+
+.doing-li:last-child {
+  margin-right: 0;
 }
 
 /* Specialists */
@@ -282,14 +290,24 @@ img {
 }
 
 .list-specialists {
-   width: calc(100% - 72px) / 4;
-   display: flex;
-   column-gap: 24px;
-   row-gap: 48px;
+  width: calc(100% - 72px) / 4;
+  display: flex;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .section-list {
   background-color: var(--title-text-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.specialists-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .section-specialists-name {
@@ -298,8 +316,7 @@ img {
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
-  padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .section-specialists-position {
@@ -307,20 +324,18 @@ img {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  padding-bottom: 32px;
 }
 
 /* Footer*/
 
 .section-footer {
   background-color: var(--main-text-color);
-  padding-top: 96px;
-  padding-bottom: 104px;
+  padding-top: 90px;
+  padding-bottom: 100px;
 }
 
 .footer-information {
   width: 264px;
-  margin-left: 155px;
 }
 
 .section-text {
@@ -358,9 +373,10 @@ img {
 
 /*------------------------------ Portfolio ---------------------------------*/
 
-.container.header-container.portfolio{
-  border: 1px solid #E7E9FC;
+.container.header-container.portfolio {
+  border-bottom: 1px solid #e7e9fc;
 }
+
 .list-portfolio {
   padding-left: 12px;
   padding-right: 12px;
@@ -370,7 +386,6 @@ img {
   display: flex;
   justify-content: center;
 }
-
 
 .flex-container {
   display: flex;
@@ -393,8 +408,12 @@ img {
 
 .list-div {
   width: 360px;
+
   background: var(--title-text-color);
-  border: 1px solid #E7E9FC;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
@@ -407,17 +426,14 @@ img {
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2px;
+  line-height: 1.2;
   margin-bottom: 8px;
-  margin-top: 64px;
 }
 
 .list-kind {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 32px;
-  padding-bottom: 0px;
 }
 
 .list-container {
@@ -438,15 +454,14 @@ img {
   letter-spacing: 0.04em;
   cursor: pointer;
   text-align: center;
+}
+
+.button {
   margin-right: 24px;
 }
 
-.button.primary {
-  margin-right: 24px;
-}
-
-.button.primary:not(:last-child) {
-  margin-right: 24px;
+.button:last-child {
+  margin-right: 0;
 }
 
 .button.primary:hover,
@@ -461,4 +476,3 @@ img {
   padding: 0;
   width: 1188px;
 }
-
